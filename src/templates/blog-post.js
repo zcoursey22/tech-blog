@@ -2,10 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
-import Img from 'gatsby-image'
 import Layout from '../components/layout'
-
-import heroStyles from '../components/hero.module.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -15,15 +12,19 @@ class BlogPostTemplate extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet title={`${post.title} | ${siteTitle}`} />
-        <div className="wrapper">
-          <h1 className="section-headline">{post.title}</h1>
-          <p>{post.publishDate}</p>
+        <main>
+          <header>
+            <h1>{post.title}</h1>
+            <date datetime={new Date(post.publishDate)}>
+              {post.publishDate}
+            </date>
+          </header>
           <div
             dangerouslySetInnerHTML={{
               __html: post.body.childMarkdownRemark.html,
             }}
           />
-        </div>
+        </main>
       </Layout>
     )
   }

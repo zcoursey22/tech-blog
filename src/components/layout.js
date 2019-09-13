@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import get from 'lodash/get'
-import base from './base.css'
-import Container from './container'
-import Navigation from './navigation'
+import './base.css'
 
 class Template extends React.Component {
   render() {
@@ -13,11 +10,16 @@ class Template extends React.Component {
     const Tag = location.pathname === rootPath ? 'h1' : 'h3'
 
     return (
-      <div className="layout">
-        <Tag>
-          <Link to={rootPath}>{title}</Link>
-        </Tag>
+      <div>
+        <header>
+          <Tag>
+            <Link to={rootPath}>{title}</Link>
+          </Tag>
+        </header>
         {children}
+        <footer>
+          <p>&copy; Copyright 2019, GnarTech</p>
+        </footer>
       </div>
     )
   }
