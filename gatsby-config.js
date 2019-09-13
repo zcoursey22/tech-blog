@@ -19,7 +19,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'GnarTech',
   },
   pathPrefix: '/tech-blog',
   plugins: [
