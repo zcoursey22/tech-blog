@@ -1,12 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 
 .wrapper {
-  max-width: 650px;
-  padding: 20px;
-  margin: 0 auto;
 }
 
 .header {
+  padding: 0.7rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: white;
+  box-shadow: 0 -7px 7px 5px rgba(0, 0, 0, 0.4);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-btn-wrapper > button {
+  margin-left: 1rem;
+}
+.header-btn-wrapper > button:nth-child(1) {
+  margin-left: 0;
 }
 
 .title > a {
@@ -15,8 +31,16 @@
   font-weight: 900;
 }
 h1.title > a {
-  font-size: 4rem;
+  /* font-size: 4rem; */
+  font-size: 2.5rem;
 }
 h3.title > a {
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: 2.5rem;
+}
+
+.footer {
+  padding: 0.7rem 0;
+  background: black;
+  color: white;
 }

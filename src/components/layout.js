@@ -5,6 +5,12 @@ import './base.css'
 import style from './layout.module.css'
 
 class Template extends React.Component {
+  getYears = () => {
+    const start = 2019
+    const current = new Date().getFullYear()
+    return current > start ? `${start} - ${current}` : start
+  }
+
   render() {
     const { location, children, title } = this.props
 
@@ -13,14 +19,24 @@ class Template extends React.Component {
 
     return (
       <div className={style.wrapper}>
-        <header className={style.header}>
-          <Tag className={style.title}>
-            <Link to={rootPath}>{title}</Link>
-          </Tag>
+        <header className={`${style.header}`}>
+          <div className={`margin-wrapper ${style.headerContent}`}>
+            <Tag className={style.title}>
+              <Link to={rootPath}>{title}</Link>
+            </Tag>
+            <div className={style.headerBtnWrapper}>
+              <button className="btn text-btn">Log In</button>
+              <button className="btn ghost-btn">Sign Up</button>
+            </div>
+          </div>
         </header>
         {children}
-        <footer>
-          <p>&copy; Copyright 2019, GnarTech</p>
+        <footer className={`${style.footer}`}>
+          <div className="margin-wrapper">
+            <p>
+              &copy; Copyright {this.getYears()}, GnarTech. All rights reserved.
+            </p>
+          </div>
         </footer>
       </div>
     )

@@ -13,10 +13,12 @@ class RootIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet title={siteTitle} />
-        <main>
-          {posts.map(({ node }) => {
-            return <ArticlePreview article={node} key={node.slug} />
-          })}
+        <main className="margin-wrapper">
+          <div className="article-list">
+            {posts.map(({ node }) => {
+              return <ArticlePreview article={node} key={node.slug} />
+            })}
+          </div>
         </main>
       </Layout>
     )
