@@ -8,7 +8,7 @@
 }
 
 .header {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .date {
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
   color: #888;
   letter-spacing: 1px;
   text-transform: uppercase;
