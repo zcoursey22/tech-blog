@@ -19,7 +19,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'GnarTech',
+    title: 'gnar.tech',
   },
   pathPrefix: '/tech-blog',
   plugins: [

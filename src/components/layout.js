@@ -22,7 +22,11 @@ class Template extends React.Component {
         <header className={`${style.header}`}>
           <div className={`margin-wrapper ${style.headerContent}`}>
             <Tag className={style.title}>
-              <Link to={rootPath}>{title}</Link>
+              <Link to={rootPath}>
+                {title.split('.')[0]}
+                <span style={{ color: '#3ca' }}>.</span>
+                {title.split('.')[1]}
+              </Link>
             </Tag>
             <div className={style.headerBtnWrapper}>
               <button className="btn text-btn">Log In</button>
@@ -34,7 +38,7 @@ class Template extends React.Component {
         <footer className={`${style.footer}`}>
           <div className="margin-wrapper">
             <p>
-              &copy; Copyright {this.getYears()}, GnarTech. All rights reserved.
+              &copy; Copyright {this.getYears()}, gnartech. All rights reserved.
             </p>
           </div>
         </footer>
