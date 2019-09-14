@@ -53,6 +53,12 @@
   margin-top: 0.2rem;
 }
 
+.post-content img {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
 .post-content p code {
   background: #eee;
   font-size: 1.1rem;
