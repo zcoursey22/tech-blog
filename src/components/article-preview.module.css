@@ -5,21 +5,30 @@
   text-decoration: none;
 }
 
+.content {
+  margin-top: 0.8rem;
+}
+
 .img {
 }
 
 .date {
   font-size: 0.8rem;
+  color: #888;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   /* font-family: 'Playfair Display', serif; */
   font-weight: bold;
 }
 
 .desc {
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
 }
 
 .tags-wrapper {

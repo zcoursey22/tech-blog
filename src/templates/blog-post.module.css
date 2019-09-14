@@ -20,6 +20,9 @@
 
 .date {
   margin-top: 0.2rem;
+  color: #888;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .post-content {
