@@ -4,6 +4,8 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import Layout from '../components/layout'
 
+import style from './blog-post.module.css'
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, 'data.contentfulBlogPost')
@@ -15,9 +17,7 @@ class BlogPostTemplate extends React.Component {
         <main>
           <header>
             <h1>{post.title}</h1>
-            <date datetime={new Date(post.publishDate)}>
-              {post.publishDate}
-            </date>
+            <p>{post.publishDate}</p>
           </header>
           <div
             dangerouslySetInnerHTML={{

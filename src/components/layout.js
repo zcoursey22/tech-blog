@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import './base.css'
 
+import style from './layout.module.css'
+
 class Template extends React.Component {
   render() {
     const { location, children, title } = this.props
@@ -10,9 +12,9 @@ class Template extends React.Component {
     const Tag = location.pathname === rootPath ? 'h1' : 'h3'
 
     return (
-      <div>
-        <header>
-          <Tag>
+      <div className={style.wrapper}>
+        <header className={style.header}>
+          <Tag className={style.title}>
             <Link to={rootPath}>{title}</Link>
           </Tag>
         </header>

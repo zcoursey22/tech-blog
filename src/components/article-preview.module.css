@@ -1,0 +1,24 @@
+.wrapper {
+  margin-bottom: 4rem;
+}
+
+.title > a {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.tag {
+  background: #888;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+.tag:nth-of-type(1) {
+  margin-left: 0;
+}

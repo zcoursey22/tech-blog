@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+
+.wrapper {
+  max-width: 670px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 1rem;
+  padding: 1.5rem 0;
+}
+
+.title > a {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+}
