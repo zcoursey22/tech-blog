@@ -1,1 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+.img {
+  max-height: 25rem;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import Layout from '../components/layout'
@@ -15,6 +16,7 @@ class BlogPostTemplate extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <Helmet title={`${post.title} | ${siteTitle}`} />
         <main>
+          <Img className={style.img} fluid={post.heroImage.fluid} />
           <header>
             <h1>{post.title}</h1>
             <p>{post.publishDate}</p>

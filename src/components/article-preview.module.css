@@ -1,5 +1,21 @@
 .wrapper {
-  margin-bottom: 4rem;
+  margin-top: 3.5rem;
+}
+.wrapper:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.wrapper * {
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  max-height: 15rem;
+}
+
+.date {
+  font-size: 0.8rem;
 }
 
 .title > a {
@@ -8,8 +24,17 @@
   font-weight: 900;
 }
 
+.desc {
+  /* color: #666; */
+  margin-top: 0.5rem;
+}
+
+.tags-wrapper {
+  margin-top: 0.5rem;
+}
+
 .tag {
-  background: #888;
+  background: #29e;
   color: white;
   border: none;
   font-size: 0.8rem;
