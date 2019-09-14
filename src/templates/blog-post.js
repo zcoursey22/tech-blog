@@ -17,10 +17,12 @@ class BlogPostTemplate extends React.Component {
         <Helmet title={`${post.title} | ${siteTitle}`} />
         <main>
           <Img className={style.img} fluid={post.heroImage.fluid} />
-          <div className="margin-wrapper post-margin-wrapper">
-            <header>
+          <div
+            className={`margin-wrapper post-margin-wrapper ${style.postWrapper}`}
+          >
+            <header className={style.header}>
               <h1 className={style.title}>{post.title}</h1>
-              <p>{post.publishDate}</p>
+              <p className={style.date}>{post.publishDate}</p>
             </header>
             <div
               className={style.postContent}

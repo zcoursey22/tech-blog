@@ -13,12 +13,13 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
-  color: black;
+  color: #222;
+  background: #f6f6f6;
 }
 
 a {
   text-decoration: none;
-  color: #29e;
+  color: #3ca;
 }
 
 h1,
@@ -48,9 +49,10 @@ h6 {
 
 .btn {
   border: none;
-  background: none;
+  background: #3ca;
+  border: 0.1rem solid #3ca;
   font-weight: bold;
-  color: #29e;
+  color: white;
   text-transform: uppercase;
   padding: 0.5rem 1.5rem;
   border-radius: 0.2rem;
@@ -58,9 +60,13 @@ h6 {
 }
 .text-btn {
   padding: 0.5rem;
+  background: none;
+  color: #3ca;
+  border-color: transparent;
 }
 .ghost-btn {
-  border: 0.1rem solid #29e;
+  background: none;
+  color: #3ca;
 }
 
 @media screen and (max-width: 800px) {

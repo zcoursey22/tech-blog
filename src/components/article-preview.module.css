@@ -1,6 +1,7 @@
 .wrapper * {
   margin: 0;
   padding: 0;
+  color: #222;
 }
 
 .img {
@@ -11,18 +12,18 @@
 }
 
 .title > a {
-  color: black;
   font-size: 1.5rem;
   font-weight: 900;
 }
 
 .desc {
+  padding: 0.5rem 0;
 }
 
 .tags-wrapper {
 }
 
-.tag {
+/* .tag {
   background: #f66;
   color: white;
   border: none;
@@ -35,4 +36,4 @@
 }
 .tag:nth-of-type(1) {
   margin-left: 0;
-}
+} */

@@ -4,9 +4,23 @@
   max-height: 25rem;
 }
 
+.post-wrapper {
+  /* background: white;
+  box-shadow: 0 0 10px -3px rgba(0, 0, 0, 0.4); */
+}
+
+.header {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
 .title {
   font-family: 'Playfair Display', serif;
   font-size: 3.2rem;
+}
+
+.date {
+  margin-top: 0.2rem;
 }
 
 .post-content {

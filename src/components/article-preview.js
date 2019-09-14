@@ -6,20 +6,20 @@ import style from './article-preview.module.css'
 
 export default ({ article }) => (
   <article className={style.wrapper}>
-    <Img className={style.img} fluid={article.heroImage.fluid} />
-    <header>
-      <h3 className={style.title}>
-        <Link to={`/${article.slug}`}>{article.title}</Link>
-      </h3>
-      <p className={style.date}>{article.publishDate}</p>
-    </header>
-    <div
-      className={style.desc}
-      dangerouslySetInnerHTML={{
-        __html: article.description.childMarkdownRemark.html,
-      }}
-    />
-    {article.tags && (
+    <Link to={`/${article.slug}`}>
+      <Img className={style.img} fluid={article.heroImage.fluid} />
+      <header>
+        <h3 className={style.title}>{article.title}</h3>
+        <p className={style.date}>{article.publishDate}</p>
+      </header>
+      <div
+        className={style.desc}
+        dangerouslySetInnerHTML={{
+          __html: article.description.childMarkdownRemark.html,
+        }}
+      />
+    </Link>
+    {/* {article.tags && (
       <div className={style.tagsWrapper}>
         {article.tags.map(tag => (
           <button className={style.tag} key={tag}>
@@ -27,6 +27,6 @@ export default ({ article }) => (
           </button>
         ))}
       </div>
-    )}
+    )} */}
   </article>
 )
