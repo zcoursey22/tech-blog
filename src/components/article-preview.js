@@ -8,16 +8,18 @@ export default ({ article }) => (
   <article className={style.wrapper}>
     <Link to={`/${article.slug}`}>
       <Img className={style.img} fluid={article.heroImage.fluid} />
-      <header>
-        <h3 className={style.title}>{article.title}</h3>
-        <p className={style.date}>{article.publishDate}</p>
-      </header>
-      <div
-        className={style.desc}
-        dangerouslySetInnerHTML={{
-          __html: article.description.childMarkdownRemark.html,
-        }}
-      />
+      <div className={style.content}>
+        <header>
+          <h3 className={style.title}>{article.title}</h3>
+          <p className={style.date}>{article.publishDate}</p>
+        </header>
+        <div
+          className={style.desc}
+          dangerouslySetInnerHTML={{
+            __html: article.description.childMarkdownRemark.html,
+          }}
+        />
+      </div>
     </Link>
     {/* {article.tags && (
       <div className={style.tagsWrapper}>

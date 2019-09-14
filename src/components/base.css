@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Lato|Playfair+Display|Fira+Code|Montserrat:900|Oswald');
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', 'Open Sans', sans-serif;
   font-weight: normal;
   color: #222;
   /* background: #f6f6f6; */
