@@ -59,6 +59,9 @@ h6 {
   font-family: 'Lato';
   letter-spacing: 1px;
 }
+.btn-mobile {
+  padding: 0.5rem;
+}
 .text-btn {
   padding: 0.5rem;
   background: none;

@@ -48,3 +48,15 @@
 .tag:nth-of-type(1) {
   margin-left: 0;
 } */
+
+@media screen and (max-width: 800px) {
+  .img {
+    max-height: 16rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .img {
+    max-height: 10rem;
+  }
+}

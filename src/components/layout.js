@@ -28,9 +28,18 @@ class Template extends React.Component {
                 {title.split('.')[1]}
               </Link>
             </Tag>
+            <Tag className={style.titleMobile}>
+              <Link to={rootPath}>
+                {title.split('.')[0]}
+                <span style={{ color: '#3ca' }}>.</span>
+              </Link>
+            </Tag>
             <div className={style.headerBtnWrapper}>
               <button className="btn text-btn">Log In</button>
               <button className="btn">Sign Up</button>
+            </div>
+            <div className={style.headerBtnWrapperMobile}>
+              <button className="btn ghost-btn btn-mobile">Get Started</button>
             </div>
           </div>
         </header>
