@@ -26,7 +26,7 @@ class Template extends React.Component {
             </Tag>
             <div className={style.headerBtnWrapper}>
               <button className="btn text-btn">Log In</button>
-              <button className="btn ghost-btn">Sign Up</button>
+              <button className="btn">Sign Up</button>
             </div>
           </div>
         </header>
