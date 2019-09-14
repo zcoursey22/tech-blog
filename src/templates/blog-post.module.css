@@ -59,6 +59,7 @@
   padding: 0.2rem 0.4rem;
   border-radius: 0.2rem;
   font-family: 'Fira Code', monospace;
+  color: #3ca;
 }
 
 .post-content > *:nth-child(1) {
