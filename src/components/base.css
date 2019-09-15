@@ -97,6 +97,10 @@ h6 {
   .article-list > *:nth-child(1) > div:nth-child(2) {
     padding-left: 1rem;
   }
+  .article-list > *:nth-child(1) > a > div {
+    max-height: none !important;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -108,5 +112,9 @@ h6 {
     display: block;
   }
   .article-list > *:nth-child(1) > div:nth-child(2) {
+  }
+  .article-list > *:nth-child(1) > a > div {
+    max-height: 10rem !important;
+    height: auto;
   }
 }
