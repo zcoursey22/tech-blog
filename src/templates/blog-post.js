@@ -22,11 +22,15 @@ class BlogPostTemplate extends React.Component {
           >
             <header className={style.header}>
               <h1 className={style.title}>{post.title}</h1>
-              <p className={style.date}>
-                <span className={style.dot} />
-                {post.publishDate}
-              </p>
-              {/* {post.author && <p>{post.author.name}</p>} */}
+              {post.author && (
+                <div className={style.authorWrapper}>
+                  <Img fluid={post.author.image.fluid} />
+                  <div>
+                    <p className={style.author}>{post.author.name}</p>
+                    <p className={style.date}>{post.publishDate}</p>
+                  </div>
+                </div>
+              )}
             </header>
             <div
               className={style.postContent}
@@ -54,8 +58,13 @@ export const pageQuery = graphql`
       title
       author {
         name
+        image {
+          fluid(maxWidth: 2048, background: "rgb:000000") {
+            ...GatsbyContentfulFluid
+          }
+        }
       }
-      publishDate(formatString: "MMMM Do, YYYY")
+      publishDate(formatString: "MMM D, YYYY")
       heroImage {
         fluid(maxWidth: 2048, background: "rgb:000000") {
           ...GatsbyContentfulFluid

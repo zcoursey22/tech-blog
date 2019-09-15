@@ -42,7 +42,7 @@ export const pageQuery = graphql`
             name
           }
           slug
-          publishDate(formatString: "MMM Do, YYYY")
+          publishDate(formatString: "MMM D, YYYY")
           tags
           heroImage {
             fluid(maxWidth: 2048, maxHeight: 1024, resizingBehavior: FILL) {
