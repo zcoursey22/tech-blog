@@ -58,6 +58,7 @@ h6 {
 }
 .post-margin-wrapper {
   max-width: 768px;
+  padding: 0 3rem;
 }
 
 .btn {
@@ -88,6 +89,9 @@ h6 {
 }
 
 @media screen and (max-width: 800px) {
+  .post-margin-wrapper {
+    padding: 0 1.5rem;
+  }
   .article-list {
     grid-template-columns: 1fr 1fr;
   }
