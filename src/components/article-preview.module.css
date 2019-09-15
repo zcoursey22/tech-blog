@@ -7,9 +7,15 @@
 
 .content {
   margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.wrapper > a {
+  width: 100%;
 }
 
 .img {
+  max-height: 25rem;
 }
 
 .date {
