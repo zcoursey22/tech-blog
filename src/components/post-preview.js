@@ -18,8 +18,8 @@ export default ({ post }) => (
 
       {post.author && (
         <div className={style.authorWrapper}>
-          {/* <Img fluid={post.author.image.fluid} /> */}
-          <div>
+          <Img className={style.authorImg} fluid={post.author.image.fluid} />
+          <div className={style.authorContent}>
             <p className={style.author}>{post.author.name}</p>
             <p className={style.date}>{post.publishDate}</p>
           </div>
