@@ -79,9 +79,10 @@
   margin: 3rem;
   border-radius: 0.3rem;
   box-shadow: 0 2px 7px -5px inset rgba(0, 0, 0, 0.4);
+  overflow-x: auto;
 }
 .post-content pre code {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-family: 'Fira Code', monospace;
   color: #777;
 }
