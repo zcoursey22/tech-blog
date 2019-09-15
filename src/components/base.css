@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display|Fira+Code|Montserrat:900');
 
+:root {
+  --primary: #3ca;
+  --link: #39e;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,7 +27,7 @@ p {
 }
 
 a {
-  color: #39e;
+  color: var(--link);
 }
 
 h1,
@@ -62,8 +67,8 @@ h6 {
 
 .btn {
   border: none;
-  background: #3ca;
-  border: 0.1rem solid #3ca;
+  background: var(--primary);
+  border: 0.1rem solid var(--primary);
   font-weight: bold;
   color: white;
   text-transform: uppercase;
@@ -79,12 +84,12 @@ h6 {
 .text-btn {
   padding: 0.5rem;
   background: none;
-  color: #3ca;
+  color: var(--primary);
   border-color: transparent;
 }
 .ghost-btn {
   background: none;
-  color: #3ca;
+  color: var(--primary);
 }
 
 @media screen and (max-width: 800px) {

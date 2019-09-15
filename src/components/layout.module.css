@@ -30,6 +30,10 @@
   display: none;
 }
 
+.logo-dot {
+  color: var(--primary) !important;
+}
+
 .title-mobile > a {
   color: #222;
   font-family: 'Montserrat', sans-serif;
@@ -67,10 +71,26 @@ h3.title > a {
   font-size: 2.5rem;
 }
 
+.social {
+  display: flex;
+}
+.social > * {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.social > *:nth-child(1) {
+  margin-left: 0;
+}
+
 .footer {
   padding: 0.7rem 0;
   background: #222;
   color: #ddd;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (max-width: 800px) {

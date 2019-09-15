@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { FaFacebookF, FaTwitter, FaPinterestP } from 'react-icons/fa'
 import './base.css'
 
 import style from './layout.module.css'
@@ -24,14 +25,14 @@ class Template extends React.Component {
             <Tag className={style.title}>
               <Link to={rootPath}>
                 {title.split('.')[0]}
-                <span style={{ color: '#3ca' }}>.</span>
+                <span className={style.logoDot}>.</span>
                 {title.split('.')[1]}
               </Link>
             </Tag>
             <Tag className={style.titleMobile}>
               <Link to={rootPath}>
                 {title.split('.')[0]}
-                <span style={{ color: '#3ca' }}>.</span>
+                <span className={style.logoDot}>.</span>
               </Link>
             </Tag>
             <div className={style.headerBtnWrapper}>
@@ -45,10 +46,15 @@ class Template extends React.Component {
         </header>
         {children}
         <footer className={`${style.footer}`}>
-          <div className="margin-wrapper">
+          <div className={`${style.footerContent} margin-wrapper`}>
             <p>
               &copy; Copyright {this.getYears()}, gnartech. All rights reserved.
             </p>
+            <div className={style.social}>
+              <FaFacebookF />
+              <FaTwitter />
+              <FaPinterestP />
+            </div>
           </div>
         </footer>
       </div>
