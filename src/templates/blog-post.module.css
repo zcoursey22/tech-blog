@@ -53,8 +53,13 @@
 }
 
 .post-content p {
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: 1.2rem;
+}
+
+.post-content h2 + p,
+.post-content h3 + p {
+  margin-top: 1rem;
 }
 
 .post-content ul,
@@ -76,7 +81,7 @@
 .post-content pre {
   background: #eee;
   padding: 1.5rem;
-  margin: 3rem 1rem;
+  margin: 3rem 0;
   border-radius: 0.3rem;
   box-shadow: 0 2px 7px -5px inset rgba(0, 0, 0, 0.4);
   overflow-x: auto;
