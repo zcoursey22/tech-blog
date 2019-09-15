@@ -26,6 +26,7 @@ class BlogPostTemplate extends React.Component {
                 <span className={style.dot} />
                 {post.publishDate}
               </p>
+              {/* {post.author && <p>{post.author.name}</p>} */}
             </header>
             <div
               className={style.postContent}
@@ -51,6 +52,9 @@ export const pageQuery = graphql`
     }
     contentfulBlogPost(slug: { eq: $slug }) {
       title
+      author {
+        name
+      }
       publishDate(formatString: "MMMM Do, YYYY")
       heroImage {
         fluid(maxWidth: 2048, background: "rgb:000000") {

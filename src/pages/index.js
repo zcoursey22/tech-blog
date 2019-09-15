@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import ArticlePreview from '../components/article-preview'
+import PostPreview from '../components/post-preview'
 
 class RootIndex extends React.Component {
   render() {
@@ -16,7 +16,7 @@ class RootIndex extends React.Component {
         <main className="margin-wrapper">
           <div className="article-list">
             {posts.map(({ node }) => {
-              return <ArticlePreview article={node} key={node.slug} />
+              return <PostPreview post={node} key={node.slug} />
             })}
           </div>
         </main>
@@ -38,6 +38,9 @@ export const pageQuery = graphql`
       edges {
         node {
           title
+          author {
+            name
+          }
           slug
           publishDate(formatString: "MMM Do, YYYY")
           tags
