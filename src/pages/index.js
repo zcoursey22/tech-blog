@@ -40,6 +40,11 @@ export const pageQuery = graphql`
           title
           author {
             name
+            image {
+              fluid(maxWidth: 2048, background: "rgb:000000") {
+                ...GatsbyContentfulFluid
+              }
+            }
           }
           slug
           publishDate(formatString: "MMM D, YYYY")
