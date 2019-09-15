@@ -25,6 +25,15 @@
   text-transform: uppercase;
 }
 
+.dot {
+  background: var(--primary);
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
 .post-content {
   padding-bottom: 2.5rem;
 }

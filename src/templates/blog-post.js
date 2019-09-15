@@ -22,7 +22,10 @@ class BlogPostTemplate extends React.Component {
           >
             <header className={style.header}>
               <h1 className={style.title}>{post.title}</h1>
-              <p className={style.date}>{post.publishDate}</p>
+              <p className={style.date}>
+                <span className={style.dot} />
+                {post.publishDate}
+              </p>
             </header>
             <div
               className={style.postContent}
