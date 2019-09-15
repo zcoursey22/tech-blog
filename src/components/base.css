@@ -14,7 +14,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   color: #222;
-  /* background: #f6f6f6; */
+  background: #f6f6f6;
 }
 
 p {
@@ -47,7 +47,7 @@ h6 {
   display: flex;
 }
 .article-list > *:nth-child(1) > div:nth-child(2) {
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   flex-basis: 60%;
 }
 
@@ -94,6 +94,9 @@ h6 {
   .article-list > *:nth-child(1) {
     grid-column-end: span 2;
   }
+  .article-list > *:nth-child(1) > div:nth-child(2) {
+    padding-left: 1rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -105,6 +108,5 @@ h6 {
     display: block;
   }
   .article-list > *:nth-child(1) > div:nth-child(2) {
-    padding-left: 1rem;
   }
 }
