@@ -14,7 +14,10 @@ export default ({ article }) => (
         <Link to={`/${article.slug}`}>
           <h3 className={style.title}>{article.title}</h3>
         </Link>
-        <p className={style.date}>{article.publishDate}</p>
+        <p className={style.date}>
+          <span className={style.dot} />
+          {article.publishDate}
+        </p>
       </header>
 
       <div
