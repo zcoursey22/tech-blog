@@ -2,7 +2,9 @@
 
 :root {
   --primary: #3ca;
+  --primary-dark: rgb(45, 177, 148);
   --link: #39e;
+  --link-dark: rgb(43, 129, 199);
 }
 
 * {
@@ -28,6 +30,10 @@ p {
 
 a {
   color: var(--link);
+  transition: 0.1s;
+}
+a:hover {
+  color: var(--link-dark);
 }
 
 h1,
@@ -67,7 +73,7 @@ h6 {
 
 .btn {
   border: none;
-  background: var(--primary);
+  background-color: var(--primary);
   border: 0.1rem solid var(--primary);
   font-weight: bold;
   color: white;
@@ -77,19 +83,34 @@ h6 {
   cursor: pointer;
   font-family: 'Lato';
   letter-spacing: 1px;
+  transition: 0.1s;
+}
+.btn:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
 }
 .btn-mobile {
   padding: 0.5rem;
 }
 .text-btn {
   padding: 0.5rem;
-  background: none;
+  background-color: transparent;
   color: var(--primary);
   border-color: transparent;
 }
+.text-btn:hover {
+  background-color: transparent;
+  color: var(--primary-dark);
+  border-color: transparent;
+}
 .ghost-btn {
-  background: none;
+  background-color: transparent;
   color: var(--primary);
+}
+.ghost-btn:hover {
+  background-color: transparent;
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
 }
 
 @media screen and (max-width: 800px) {
