@@ -73,11 +73,23 @@
   display: block;
 }
 
+.post-content pre {
+  background: #eee;
+  padding: 1.5rem;
+  margin: 3rem;
+  border-radius: 0.3rem;
+}
+.post-content pre code {
+  font-size: 1.1rem;
+  font-family: 'Fira Code', monospace;
+  color: #777;
+}
+
 .post-content p code {
   background: #eee;
   font-size: 1.1rem;
   padding: 0.2rem 0.4rem;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   font-family: 'Fira Code', monospace;
   color: var(--primary);
 }
