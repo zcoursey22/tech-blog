@@ -104,7 +104,7 @@ h3.title > a {
 
 @media screen and (max-width: 500px) {
   .header {
-    padding: 0.3rem 0;
+    padding: 0.5rem 0;
   }
   .header-btn-wrapper {
     display: none;
