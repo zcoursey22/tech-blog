@@ -44,6 +44,13 @@
   white-space: nowrap;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.author:hover {
+  text-decoration-color: var(--primary);
 }
 .date {
   color: #888;
