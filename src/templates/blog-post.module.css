@@ -78,6 +78,7 @@
   padding: 1.5rem;
   margin: 3rem;
   border-radius: 0.3rem;
+  box-shadow: 0 2px 7px -5px inset rgba(0, 0, 0, 0.4);
 }
 .post-content pre code {
   font-size: 1.1rem;
@@ -92,6 +93,7 @@
   border-radius: 0.3rem;
   font-family: 'Fira Code', monospace;
   color: var(--primary);
+  box-shadow: 0 2px 7px -5px inset rgba(0, 0, 0, 0.4);
 }
 
 .post-content > *:nth-child(1) {
