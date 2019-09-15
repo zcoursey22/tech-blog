@@ -38,9 +38,12 @@
   font-size: 1.7rem;
   /* font-family: 'Playfair Display', serif; */
   font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 0.1s;
 }
 .title:hover {
-  text-decoration: underline;
+  text-decoration-color: #222;
 }
 
 .desc {
